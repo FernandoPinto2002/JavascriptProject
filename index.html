@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- This makes the page responsive on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Exercise Finder</title>
+
+  <!-- This connects our CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Exercise Finder</h1>
+    <p class="subtitle">Pick a muscle or search any exercise.</p>
+
+    <!-- These are the controls (filters and search) -->
+    <div class="controls">
+
+      <!-- Dropdown to choose muscle group -->
+      <select id="muscleSelect">
+        <option value="">Select muscle group</option>
+        <option value="chest">Chest</option>
+        <option value="shoulders">Shoulders</option>
+        <option value="triceps">Triceps</option>
+        <option value="lats">Lats</option>
+        <option value="back">Back</option>
+        <option value="hamstrings">Hamstrings</option>
+        <option value="glutes">Glutes</option>
+        <option value="quads">Quads</option>
+        <option value="calves">Calves</option>
+        <option value="abs">Abs</option>
+      </select>
+
+      <!-- Dropdown to choose difficulty -->
+      <select id="difficultySelect">
+        <option value="">All Difficulties</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+
+      <!-- Search box -->
+      <input id="searchInput" type="text" placeholder="Search exercise...">
+
+    </div>
+
+    <!-- This shows how many exercises were found -->
+    <div id="exerciseCount" class="count"></div>
+
+    <!-- This is where exercise cards appear -->
+    <div id="output"></div>
+  </div>
+
+  <!-- This loads the search library (Fuse.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+
+  <!-- This connects our JavaScript file -->
+  <script src="app.js"></script>
+
+</body>
+</html>
