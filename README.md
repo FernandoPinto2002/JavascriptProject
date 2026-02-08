@@ -6,7 +6,7 @@ The Exercise Finder is a web-based application that allows users to select a mus
 
 The main purpose of this project was to practice working with nested data structures and recursive functions while improving my ability to write clean, structured JavaScript code. I also wanted to demonstrate the use of ES6 array methods such as filter, map, sort, and reduce, as well as show that I can integrate external tools like Fuse.js to enhance functionality.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=FGKVftT7Lfc)
 
 # Development Environment
 
